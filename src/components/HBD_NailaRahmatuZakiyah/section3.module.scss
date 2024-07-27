@@ -1,0 +1,121 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.about_her_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(48 53 63);
+}
+
+.hero_image_1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 201px;
+  height: 167px;
+}
+
+.flex_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 10px;
+  margin: 49px auto 72px;
+  width: 89.17%;
+
+  @include md {
+    column-gap: 15px;
+  }
+
+  @include xs {
+    flex-direction: column;
+    gap: 8px 15px;
+  }
+}
+
+.secondary_image_1 {
+  width: 254px;
+  min-width: 0;
+
+  @include mq-between(lg, xl) {
+    width: 35%;
+  }
+
+  @include xs {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 50%;
+  }
+}
+
+.image_and_text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+  width: 640px;
+  min-width: 0;
+
+  @include sm {
+    gap: 3px 0;
+  }
+
+  @include xs {
+    align-items: center;
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+}
+
+.hero_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 212px;
+  font: 400 45px/1 "LTSaeada Regular", Helvetica, Arial, serif;
+  color: rgb(158 249 255);
+  text-align: center;
+
+  @include md {
+    justify-content: flex-start;
+    text-align: left;
+    font-size: 35px;
+  }
+
+  @include sm {
+    font-size: 30px;
+  }
+
+  @include xs {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.about_her_description {
+  display: flex;
+  align-items: center;
+  font: 200 15px/1 "LTSaeada Regular", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: justify;
+
+  @include md {
+    font-size: 12px;
+  }
+
+  @include xs {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.hero_image_2 {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 119px;
+  height: 114px;
+}

@@ -1,0 +1,60 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.quotes_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center / 100% 100% no-repeat;
+  background-color: rgb(33 40 48);
+
+  @include md {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.decorative_image {
+  position: absolute;
+  inset: 413px -64px auto -83px;
+  width: 1227px;
+  height: 706px;
+  filter: blur(53.95px);
+}
+
+.quotes_content_col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px 0;
+  margin: 59px auto 102px;
+  width: 86.85%;
+}
+
+.quote_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 76px/1.88 Autography, Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include sm {
+    font-size: 50px;
+  }
+}
+
+.quote_subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 200 22px/1.59 "LTSaeada Regular", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include sm {
+    font-size: 16px;
+  }
+}

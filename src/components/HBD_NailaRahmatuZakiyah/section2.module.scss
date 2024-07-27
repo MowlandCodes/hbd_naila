@@ -1,0 +1,117 @@
+@use "../utils" as *;
+@use "../global" as *;
+
+.intro_section {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center / 100% 100% no-repeat;
+  background-color: rgb(84 84 84);
+
+  @include xxs {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.flex_col_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 74px auto 97px;
+  width: 581px;
+
+  @include xs {
+    width: 80%;
+  }
+}
+
+.profile_image {
+  width: 71.77%;
+
+  @include md {
+    width: 45%;
+  }
+
+  @include xs {
+    width: 50%;
+  }
+
+  @include xxs {
+    width: 65%;
+  }
+}
+
+.group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 9px 0 0;
+  width: 100%;
+}
+
+.profile_name {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 400 59px/1.88 Autography, Helvetica, Arial, serif;
+  color: rgb(216 252 255);
+  text-align: center;
+
+  @include md {
+    font-size: 40px;
+  }
+
+  @include xxs {
+    font-size: 25px;
+  }
+}
+
+.profile_age {
+  position: absolute;
+  bottom: 3px;
+  left: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 21px;
+  font: 200 21px/1 "LTSaeada Regular", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  @include xs {
+    left: 173px;
+  }
+
+  @include xxs {
+    bottom: 0;
+    left: 32%;
+    font-size: 12px;
+  }
+}
+
+.profile_bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 31px 0 0;
+  width: 98.8%;
+  font: 300 15px/1 "LTSaeada Regular", Helvetica, Arial, serif;
+  color: rgb(255 255 255);
+  text-align: center;
+
+  @include md {
+    font-size: 12px;
+  }
+
+  @include sm {
+    width: 80%;
+  }
+
+  @include xxs {
+    width: 85%;
+  }
+}
